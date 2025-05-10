@@ -7,6 +7,7 @@
   <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Jose Chanax | Web Developer, HTML, CSS, JavaScript.">
   <meta name="author" content="Jose Chanax">
   <link rel="stylesheet" href="styles/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="scripts/getdates.js" defer></script>
 </head>
 
@@ -24,18 +25,40 @@
   </header>
 
   <main>
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/profile1.jpg" alt="personal_photo_1" width="300" height="200">
-      <p>Hello! I'm Jose Chanax, and I'm from Guatemala. I currently work as a Software Engineer at my company. I'm married to a wonderful woman, and we’ve been together for over three years. I love spending time with her and constantly learning new things.</p>
-    </section>
+  <!-- Left Card: About Me and History -->
+  <section class="card profile">
+    <div class="about-section">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I'm Jose Chanax, and I'm from Guatemala. I currently work as a Software Engineer at my company. I'm married to a wonderful woman, and we’ve been together for over three years. I love spending time with her and constantly learning new things.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/profile1.jpg" alt="personal_photo_1">
+      </div>
+    </div>
 
-    <section class="card">
+    <div class="history-section">
       <h2>History of Web Development</h2>
-      <img src="images/history-web.jpg" alt="Early_Web" width="300" height="200">
-      <p>The World Wide Web was invented by Tim Berners-Lee in 1989 while working at CERN. The first website went live in 1991, and it explained what the web was and how to use it. From simple static HTML pages, web development has evolved into a dynamic, interactive experience powered by CSS, JavaScript, and modern frameworks.</p>
-    </section>
-  </main>
+      <div class="history-content">
+        <img src="images/history-web.jpg" alt="Early_Web">
+        <p>The World Wide Web was invented by Tim Berners-Lee in 1989 while working at CERN. The first website went live in 1991, and it explained what the web was and how to use it. From simple static HTML pages, web development has evolved into a dynamic, interactive experience powered by CSS, JavaScript, and modern frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Right Card: Web Dev Resources -->
+  <section class="card resources">
+    <h2>Web Dev Resources</h2>
+    <ul>
+      <li><a href="https://dev.to/">Dev.to Community</a></li>
+      <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+      <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+      <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      <li><a href="https://www.udemy.com/">Udemy</a></li>
+      <li><a href="https://placehold.co/">Image Placeholder</a></li>
+    </ul>
+  </section>
+</main>
 
   <footer>
     <p>&copy; <span id="currentyear"></span> || Jose Chanax 🌐 Guatemala</p>
