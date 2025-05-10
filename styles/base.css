@@ -34,8 +34,8 @@ nav {
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
-  padding: 1rem 0;  /* This increases vertical height */
-  justify-content: space-evenly; /* Equal spacing between all nav links */
+  padding: 1rem 0;  
+  justify-content: space-evenly;
 }
 
 nav a {
