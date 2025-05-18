@@ -56,7 +56,6 @@ nav.open {
 }
 
 .gallery {
-  display: grid;
   grid-template-columns: 1fr; 
   gap: 2rem;                  
   justify-content: center;   
