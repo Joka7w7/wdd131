@@ -1,0 +1,85 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004b8d; 
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+main { 
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+
+#primaryNav {
+  display: flex;
+  gap: 4rem; 
+}
+
+#primaryNav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#primaryNav a:hover {
+  text-decoration: underline;
+}
+
+#hamburgerBtn {
+  display: none;
+}
+
+.gallery {
+  display: grid;                          
+  grid-template-columns: repeat(3, 2fr);  
+  gap: 2rem;                              
+  justify-items: center;                 
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* Large: 3 columns */
+  }
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #003366;
+  font-size: 0.9rem;
+  color: white;
+}

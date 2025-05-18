@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Temple Album</title>
+  <meta name="description" content="A collection of temples from around the world." >
+  <meta name="author" content="Jose Chanax">
+  <link rel="stylesheet" href="temples.css" media="(max-width: 767px)" >
+  <link rel="stylesheet" href="temples-large.css" media="(min-width: 768px)" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="temples.css" media="print" onload="this.media='(max-width: 767px)'">
+  <script src="temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburgerBtn">&#9776;</button>
+    <nav id="primaryNav">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="gallery">
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/4052d9f8ff0e11edb9dbeeeeac1e97aea1b93079/full/640%2C/0/default" width="300" height="200" alt="Temple 1" >
+        <figcaption>Bangkok, Thailand Temple</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/8c9a8135ae6962307b0150233443cb45b40673f4/full/1920%2C/0/default" width="300" height="200" alt="Temple 2" >
+        <figcaption>Panama City, Panama Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/4b129a33b4b311ee9c99eeeeac1e820ae5a7a3bb/full/1920%2C/0/default" width="300" height="200" alt="Temple 3" >
+        <figcaption>Coban, Guatemala Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/e08c5f68d919c3673ee7777429291c372b906e2f/full/1920%2C/0/default" width="300" height="200" alt="Temple 4" >
+        <figcaption>Quetzaltenango, Guatemala Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/h8S6iuJ8ZTku4sw8VhhrbbUYiv39xWmb2RHmCSmC/full/1920%2C/0/default" width="300" height="200" alt="Temple 5" >
+        <figcaption>San Pedro Sula, Honduras Temple</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/6861111d8046c6d22f1f4d4f4fc0676b1e532028/full/1920%2C/0/default" width="300" height="200" alt="Temple 6" >
+        <figcaption>San Jose, Costa Rica Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/0a5ff56bebe2492e8c1e7ca797d461fff8fdac1a/full/1920%2C/0/default" width="300" height="200" alt="Temple 7" >
+        <figcaption>San Salvador, El Salvador Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/95f3f3abdd4811ed920ceeeeac1e15db91037802/full/640%2C/0/default" width="300" height="200" alt="Temple 8" >
+        <figcaption>Brasília, Brazil Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://www.churchofjesuschrist.org/imgs/5ec026c4efeaaa19a98e40f0f1b4c6069ae63517/full/640%2C/0/default" width="300" height="200" alt="Temple 9" >
+        <figcaption>Paris, France Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Jose Chanax | Guatemala</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
