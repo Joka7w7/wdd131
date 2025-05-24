@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #4997d0;   /* Guatemala blue */
+  --secondary-color: #ffffff; /* White */
+  --accent-color: #007849;    /* Optional green */
+  --light-bg: #f9f9f9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  background-color: var(--light-bg);
+  color: black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.hero {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+}
+
+.data, .weather {
+  background-color: var(--light-bg);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.icon-mobile {
+  display: block;
+  width: 40px;
+  margin: 0 auto 1rem;
+}
+
+.icon-wide {
+  display: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* WIDE VIEW */
+@media (min-width: 600px) {
+  .data {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    width: fit-content;
+  }
+
+  .weather {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    width: fit-content;
+  }
+
+  .icon-mobile {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+}
