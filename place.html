@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals - Jose Chanax</title>
+  <title>Country Information Page</title>
   <meta name="description" content="Country or place information page.">
   <meta name="author" content="Jose Chanax">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/place.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="styles/place.css"></noscript>
-
+  <link rel="stylesheet" href="styles/place.css">
 
   <script src="scripts/place.js" defer></script>
 </head>
@@ -27,7 +24,7 @@
         <picture>
             <source srcset="images/hero-large.webp" media="(min-width: 600px)">
             <source srcset="images/hero-small.webp" media="(max-width: 599px)">
-            <img src="images/hero-small.webp" width="600" height="300" alt="Country Hero Image">
+            <img src="images/hero-small.webp" width="600" height="900" alt="Country Hero Image" loading="eager" fetchpriority="high">
         </picture>
 
         <div class="data">
@@ -46,7 +43,7 @@
 
         <div class="weather">
             <h2>Weather</h2>
-            <img src="images/partly-cloudy.svg" alt="Cloudy weather icon" class="icon-mobile">
+            <img src="images/partly-cloudy.svg" alt="Cloudy weather icon" class="icon-mobile" width="40" height="40" loading="lazy">
             <ul>
                 <li><strong>Temperature:</strong> <span id="temperature">25</span>°C</li>
                 <li><strong>Conditions:</strong> Partly Cloudy</li>
