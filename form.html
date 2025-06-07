@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals - Product Review</title>
+  <meta name="description" content="This page allows users to submit product reviews, including ratings, features, and written feedback.">
+  <meta name="author" content="Jose Chanax">
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <form method="get" action="review.html">
+    <h1>Product Review</h1>
+
+    <label for="productName">Product Name</label>
+    <select id="productName" name="productName" required>
+      <option value="" disabled selected>Choose a Product ...</option>
+    </select>
+
+    <fieldset>
+      <legend>Overall Rating</legend>
+      <div class="rating-group">
+        <label><input type="radio" name="rating" required value="1"> ★</label>
+        <label><input type="radio" name="rating" value="2"> ★★</label>
+        <label><input type="radio" name="rating" value="3"> ★★★</label>
+        <label><input type="radio" name="rating" value="4"> ★★★★</label>
+        <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+      </div>
+    </fieldset>
+
+    <label for="installDate">Date of Installation</label>
+    <input type="date" id="installDate" name="installDate" required />
+
+    <fieldset>
+      <legend>Which features did you find useful in the product?</legend>
+      <p><em>(Check all that apply)</em></p>
+      <label><input type="checkbox" name="features" value="Durability" /> Durability</label><br />
+      <label><input type="checkbox" name="features" value="Ease of Use" /> Ease of Use</label><br />
+      <label><input type="checkbox" name="features" value="Performance" /> Performance</label><br />
+      <label><input type="checkbox" name="features" value="Design" /> Design</label>
+    </fieldset>
+
+    <label for="review">Written Review <span>(Optional)</span></label>
+    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+    <label for="username">Your Name <span>(Optional)</span></label>
+    <input type="text" id="username" name="username" />
+
+    <input type="submit" value="Post Review" />
+    </form>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> || Jose Chanax 🌐 Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+ 
+</body>
+</html>
