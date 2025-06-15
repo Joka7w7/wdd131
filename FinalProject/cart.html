@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals - FinalProject - Cart</title>
+  <meta name="description" content="Cart page for All-In-One Goods, displaying items added to the cart and the subtotal.">
+  <meta name="author" content="Jose Chanax">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="logo">All-In-One Goods</div>
+
+  <nav class="nav">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">(0)</span></a>
+
+  <div class="hamburger">☰</div>
+</header>
+
+  <main>
+    <h1>Your Cart</h1>
+    <div id="cart-container" class="products-grid"></div>
+    <div id="cart-subtotal">
+      <h2>Subtotal: $<span id="subtotal">0.00</span></h2>
+    </div>
+
+    <section class="about">
+      <div class="about-card">
+        <h2>Why Choose All-In-One Goods?</h2>
+        <p>At All-In-One Goods, we bring you the best of home essentials, smart gadgets, kitchen tools, and more — all in one place. We focus on quality, convenience, and great value, so you can shop confidently and save time.</p>
+        <p>Subscribe to get exclusive deals, new arrivals, and helpful tips delivered to your inbox!</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All-In-One Goods | Jose Chanax</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
